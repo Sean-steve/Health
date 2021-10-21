@@ -32,6 +32,7 @@ class itemFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        postToList()
         val view = inflater.inflate(R.layout.fragment_item_list, container, false)
 
         // Set the adapter
@@ -41,8 +42,7 @@ class itemFragment : Fragment() {
                     columnCount <= 1 -> LinearLayoutManager(context)
                     else -> GridLayoutManager(context, columnCount)
                 }
-                    val recyclerView:RecyclerView=findViewById(R.id.recycler_view)
-                recyclerView.adapter=MyItemRecyclerViewAdapter(titlesList, descriptionsList,
+                    adapter=MyItemRecyclerViewAdapter(titlesList, descriptionsList,
                     imagesList)
 
             }
@@ -73,7 +73,7 @@ class itemFragment : Fragment() {
     }
     private fun postToList(){
         for (i: Int in 1..25){
-            addToList("Title$i","Description$i",R.mipmap.ic_launcher)}
+            addToList("PTSD","Bad Illness",R.mipmap.ic_launcher)}
     }
 }
 
