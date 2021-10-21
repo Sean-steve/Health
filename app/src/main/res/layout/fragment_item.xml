@@ -39,7 +39,7 @@
                 android:id="@+id/rv_title"
                 android:layout_marginStart="10dp"
                 android:text="@string/ptsd"
-                android:textColor="@android:color/black"
+                android:textColor="@color/purple_500"
                 android:textSize="20sp"/>
             <TextView
                 android:layout_width="wrap_content"
@@ -47,7 +47,7 @@
                 android:id="@+id/rv_desc"
                 android:layout_marginStart="10dp"
                 android:text="@string/bad_illness"
-                android:textColor="@android:color/darker_gray"
+                android:textColor="@android:color/holo_purple"
                 android:textSize="20sp"/>
         </LinearLayout>
     </RelativeLayout>
