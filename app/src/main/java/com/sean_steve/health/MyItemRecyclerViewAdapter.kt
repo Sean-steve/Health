@@ -28,7 +28,7 @@ class MyItemRecyclerViewAdapter(
         init {
             itemView.setOnClickListener { v: View ->
                 val position:Int= absoluteAdapterPosition
-                Toast.makeText(itemView.context,"You clicked item # $position+1",Toast.LENGTH_SHORT).show()
+                Toast.makeText(itemView.context,"You clicked item # ${position+1}",Toast.LENGTH_SHORT).show()
             }
         }
     }
