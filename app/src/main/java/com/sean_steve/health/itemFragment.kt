@@ -39,7 +39,7 @@ class itemFragment : Fragment() {
         if (view is RecyclerView) {
             with(view) {
                 layoutManager = when {
-                    columnCount <= 1 -> LinearLayoutManager(context)
+                    columnCount <= 3 -> LinearLayoutManager(context)
                     else -> GridLayoutManager(context, columnCount)
                 }
                     adapter=MyItemRecyclerViewAdapter(titlesList, descriptionsList,
